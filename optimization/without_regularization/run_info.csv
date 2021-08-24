@@ -1,0 +1,32 @@
+2021-04-03 22:04:07.502949
+ANImodel: <class 'neutromeratio.ani.CompartimentedAlchemicalANI2x'>
+env: droplet
+max_snapshots_per_window: 200
+checkpoint_filename: CompartimentedAlchemicalANI2x_droplet.pt
+diameter: 16
+batch_size: 7
+elements: CHON
+data_path: /data/local/projects/neutromeratio/data/equilibrium_sampling/ANI2x-droplet-16A-100ps/
+max_epochs: 400
+load_checkpoint: False
+names: []
+lr_AdamW: 1e-05
+lr_SGD: 1e-09
+weight_decay: 0.0
+test_size: 0.2
+validation_size: 0.2
+snapshot_penalty_f: PenaltyFunction(dE_warm_up=0, dE_exp=0, dE_den=0, dE_max_scale=0.0, dE_active=False, dE_offset=1, dG_exp=1, dG_den=1, dG_max_scale=1.0, dG_offset=0.0)
+datetime: <module 'datetime' from '/data/shared/software/python_env/anaconda3/envs/ani/lib/python3.7/datetime.py'>
+_: CompartimentedAlchemicalANI2x(
+  (species_converter): SpeciesConverter()
+  (aev_computer): AEVComputer()
+  (neural_networks): None
+  (energy_shifter): EnergyShifter()
+  (ANIFirstPart): Precomputation(
+    (partial_ani_ensemble): PartialANIEnsemble()
+    (species_converter): SpeciesConverter()
+    (aev): AEVComputer()
+  )
+)
+ct: 2021-04-03 22:04:07.502949
+fname: run_info.csv
